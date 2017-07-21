@@ -6,6 +6,28 @@
 `npm i browser-sync bs-auth`
 
 ## Usage
+```javascript
+const bs = require('browser-sync').create();
+
+bs.use(require('bs-auth'), {
+    user: 'user',
+    pass: 'password'
+});
+```
+
+or
+
+```javascript
+plugins: [
+    {
+        module: "bs-auth",
+        options: {
+            user: 'user',
+            pass: 'password'
+        }
+    }
+]
+```
 
 Browsersync [plugins configure](https://browsersync.io/docs/options#option-plugins)
 
