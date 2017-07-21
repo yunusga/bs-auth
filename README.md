@@ -1,4 +1,4 @@
-# bs-auth <sup>[1.0.0](https://github.com/tazau/bs-auth/blob/master/CHANGELOG)</sup>
+# bs-auth <sup>[1.0.0](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
 
 > [Browsersync](https://browsersync.io/) basic authorization middleware plugin
 
