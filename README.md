@@ -1,4 +1,4 @@
-# bs-auth <sup>[1.0.1](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
+# bs-auth <sup>[1.0.2](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
 
 [![bs-auth on NPM](https://nodei.co/npm/bs-auth.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bs-auth/)
 
