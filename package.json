@@ -24,7 +24,7 @@
   "scripts": {},
   "author": "Yunus Gaziev <yunusga@yandex.ru> (https://github.com/yunusga)",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "basic-auth": "1.1.0",
     "generate-password": "1.3.0"
   }
