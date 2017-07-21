@@ -20,15 +20,20 @@ bs.use(require('bs-auth'), {
 or
 
 ```javascript
-plugins: [
-    {
-        module: "bs-auth",
-        options: {
-            user: 'user',
-            pass: 'password'
+const bs = require('browser-sync').create();
+
+bs.init({
+    ... some options
+    plugins: [
+        {
+            module: "bs-auth",
+            options: {
+                user: 'user',
+                pass: 'password'
+            }
         }
-    }
-]
+    ]
+})
 ```
 
 Browsersync [plugins configure](https://browsersync.io/docs/options#option-plugins)
