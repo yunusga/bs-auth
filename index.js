@@ -16,7 +16,8 @@ module.exports['plugin'] = (opts, bs) => {
             numbers: true
         },
         user: 'browsersync',
-        pass: false
+        pass: false,
+        use: true
     }, opts);
 
     let logger = bs.getLogger(PLUGIN_NAME).info('Access Info:');
@@ -38,22 +39,25 @@ module.exports['plugin'] = (opts, bs) => {
     console.log(`    password: ${opts.pass}`);
     console.log(' -------------------------------------');
 
-    // add middleware for Authorization
-    bs.addMiddleware('', (req, res, next) => {
+    if (opts.use) {
 
-        let auth = basicAuth(req);
+        // add middleware for Authorization
+        bs.addMiddleware('', (req, res, next) => {
 
-        if (auth && auth.name === opts.user && auth.pass === opts.pass) {
-            return next();
-        } else {
-            res.statusCode = 401;
-            res.setHeader('WWW-Authenticate', `Basic realm="${PLUGIN_NAME}"`);
-            res.end('Access denied');
-        }
+            let auth = basicAuth(req);
 
-    }, {
-        id: 'Browsersync Server Authorization Middleware',
-        override: true
-    });
+            if (auth && auth.name === opts.user && auth.pass === opts.pass) {
+                return next();
+            } else {
+                res.statusCode = 401;
+                res.setHeader('WWW-Authenticate', `Basic realm="${PLUGIN_NAME}"`);
+                res.end('Access denied');
+            }
+
+        }, {
+            id: 'Browsersync Server Authorization Middleware',
+            override: true
+        });
+    }
 
 }
