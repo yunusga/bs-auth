@@ -45,6 +45,7 @@ generatePassword: {
     numbers: true
 },
 user: 'browsersync',
-pass: false // if pass false or not set, plugin generate random password
+pass: false,
+use: true // if pass false or not set, plugin generate random password
 ```
 `generatePassword` options from [generate-password](https://www.npmjs.com/package/generate-password)
