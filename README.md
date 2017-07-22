@@ -1,4 +1,4 @@
-# bs-auth <sup>[1.0.2](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
+# bs-auth <sup>[1.1.3](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
 
 [![bs-auth on NPM](https://nodei.co/npm/bs-auth.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bs-auth/)
 
@@ -45,6 +45,7 @@ generatePassword: {
     numbers: true
 },
 user: 'browsersync',
-pass: false // if pass false or not set, plugin generate random password
+pass: false,
+use: true // if pass false or not set, plugin generate random password
 ```
 `generatePassword` options from [generate-password](https://www.npmjs.com/package/generate-password)
