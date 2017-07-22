@@ -26,7 +26,7 @@ bs.init({
     ... some options
     plugins: [
         {
-            module: "bs-auth",
+            module: 'bs-auth',
             options: {
                 user: 'user',
                 pass: 'password'

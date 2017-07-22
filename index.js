@@ -8,7 +8,7 @@ const PLUGIN_NAME = 'BS Authorization'
  * @param {Object} opts
  * @param {BrowserSync} bs
  */
-module.exports["plugin"] = (opts, bs) => {
+module.exports['plugin'] = (opts, bs) => {
 
     opts = Object.assign({
         generatePassword: {
@@ -19,14 +19,14 @@ module.exports["plugin"] = (opts, bs) => {
         pass: false
     }, opts);
 
-    let logger = bs.getLogger(PLUGIN_NAME).info("Access Info:");
+    let logger = bs.getLogger(PLUGIN_NAME).info('Access Info:');
 
-    if (typeof opts.logLevel !== "undefined") {
+    if (typeof opts.logLevel !== 'undefined') {
 
         logger.setLevel(opts.logLevel);
     }
 
-    if (typeof opts.pass === "undefined" || !opts.pass) {
+    if (typeof opts.pass === 'undefined' || !opts.pass) {
 
         Object.assign(opts, {
             pass: passwordGenerator.generate(opts.generatePassword)
@@ -39,7 +39,7 @@ module.exports["plugin"] = (opts, bs) => {
     console.log(' -------------------------------------');
 
     // add middleware for Authorization
-    bs.addMiddleware("", (req, res, next) => {
+    bs.addMiddleware('', (req, res, next) => {
 
         let auth = basicAuth(req);
 
