@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.4 <sup>25.07.2017</sup>
+- fix module work with option `use : false`
+
 ## 1.1.3 <sup>22.07.2017</sup>
 - Added option for use middleware (default: true)
 - Updated README.md
