@@ -20,6 +20,12 @@ module.exports['plugin'] = (opts, bs) => {
         use: true
     }, opts);
 
+
+    if (!opts.use) {
+        return void 0;
+    }
+    
+
     let logger = bs.getLogger(PLUGIN_NAME).info('Access Info:');
 
     if (typeof opts.logLevel !== 'undefined') {
