@@ -1,4 +1,6 @@
 # Changelog
+## 1.1.5 <sup>01.08.2017</sup>
+- Add auth options to global Browsersync options
 
 ## 1.1.4 <sup>25.07.2017</sup>
 - fix module work with option `use : false`

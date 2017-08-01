@@ -33,7 +33,9 @@ bs.init({
             }
         }
     ]
-})
+}, () => {
+    bs.getOption('bsAuth'); // get plugin current options
+});
 ```
 
 Browsersync [plugins configure](https://browsersync.io/docs/options#option-plugins)
@@ -45,7 +47,7 @@ generatePassword: {
     numbers: true
 },
 user: 'browsersync',
-pass: false,
-use: true // if pass false or not set, plugin generate random password
+pass: false, // if not set or false, plugin generate random password
+use: true
 ```
 `generatePassword` options from [generate-password](https://www.npmjs.com/package/generate-password)
