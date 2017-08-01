@@ -40,6 +40,8 @@ module.exports['plugin'] = (opts, bs) => {
         });
     }
 
+    bs.setOption('bsAuth', opts);
+    
     console.log(' -------------------------------------');
     console.log(`        user: ${opts.user}`);
     console.log(`    password: ${opts.pass}`);
