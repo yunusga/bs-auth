@@ -40,6 +40,7 @@ module.exports['plugin'] = (opts, bs) => {
         });
     }
 
+    // Set bs-auth options in global Browsersync options
     bs.setOption('bsAuth', opts);
     
     console.log(' -------------------------------------');
