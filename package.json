@@ -1,6 +1,6 @@
 {
   "name": "bs-auth",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Middleware for Browsersync basic authorization",
   "deprecated": false,
   "main": "index.js",
