@@ -1,4 +1,7 @@
 # Changelog
+## 1.1.6 <sup>22.08.2017</sup>
+ - Add [https://shields.io/](shields.io) badges
+
 ## 1.1.5 <sup>01.08.2017</sup>
 - Add auth options to global Browsersync options
 

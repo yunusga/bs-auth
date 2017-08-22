@@ -1,6 +1,6 @@
-# bs-auth <sup>[1.1.5](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
+# bs-auth <sup>[1.1.6](https://github.com/tazau/bs-auth/blob/master/CHANGELOG.md)</sup>
 
-[![bs-auth on NPM](https://nodei.co/npm/bs-auth.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bs-auth/)
+[![npm](https://img.shields.io/npm/v/bs-auth.svg)](https://www.npmjs.com/package/bs-auth) [![npm](https://img.shields.io/npm/l/bs-auth.svg)](https://www.npmjs.com/package/bs-auth) [![npm](https://img.shields.io/npm/dm/bs-auth.svg)](https://www.npmjs.com/package/bs-auth)
 
 > [Browsersync](https://browsersync.io/) basic authorization middleware plugin
 
