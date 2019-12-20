@@ -2,7 +2,7 @@
 
 const basicAuth = require('basic-auth');
 const passwordGenerator = require('generate-password');
-const PLUGIN_NAME = 'BS Authorization'
+const PLUGIN_NAME = 'BS Authorization';
 
 /**
  * @param {Object} opts
@@ -24,7 +24,6 @@ module.exports['plugin'] = (opts, bs) => {
     if (!opts.use) {
         return void 0;
     }
-    
 
     let logger = bs.getLogger(PLUGIN_NAME).info('Access Info:');
 
@@ -42,7 +41,7 @@ module.exports['plugin'] = (opts, bs) => {
 
     // Set bs-auth options in global Browsersync options
     bs.setOption('bsAuth', opts);
-    
+
     console.log(' -------------------------------------');
     console.log(`        user: ${opts.user}`);
     console.log(`    password: ${opts.pass}`);
